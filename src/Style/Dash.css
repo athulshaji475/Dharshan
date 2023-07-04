@@ -1,0 +1,68 @@
+/* Add a class to the parent div to make the selector more specific */
+.my-table-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.my-table-container table {
+    width: 90%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px 10px lightgray;
+    margin: 0 auto;
+}
+
+.my-table-container th {
+   
+    background: #a01dae;
+    color: #fff;
+    font-weight: 600;
+}
+
+.my-table-container td,
+.my-table-container th {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+    .my-table-container td,
+    .my-table-container tr {
+        display: block;
+    }
+
+    .my-table-container thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .my-table-container tr {
+        border: 1px solid #064185;
+    }
+
+    .my-table-container tr + tr {
+        margin-top: 1.5em;
+    }
+
+    .my-table-container td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        background-color:#f0f0f0;/*rgba(62, 104, 148, 0.4);*/
+      
+        text-align: left;
+    }
+
+    .my-table-container td:before {
+        content: attr(data-label);
+        display: inline-block;
+        line-height: 1.5;
+        margin-left: -100%;
+        width: 100%;
+        white-space: nowrap;
+    }
+}

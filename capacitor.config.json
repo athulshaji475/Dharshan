@@ -1,0 +1,8 @@
+{
+    "appId": "com.init.gddardshan",
+    "appName": "gddardshan",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+  }

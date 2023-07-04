@@ -1,0 +1,185 @@
+
+.create-formcon h3 {
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	margin: 60px 0px 10px 0px;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+  }
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+.logbody{
+    background: #f093fb;
+    padding:10px;
+    border-radius: 10px;
+    margin-top: 5%;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+}
+.create-formcon label {
+	padding: 0px;
+	margin: 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.create-formcon input,
+.create-formcon select {
+	border: 2px solid #f790e2;
+	height: 36px;
+	font-size: 15px;
+}
+
+.create-formcon input:focus,
+.create-formcon select:focus {
+	border: 2px solid #f301a2;
+
+}
+
+input,
+select {
+	box-shadow: none !important;
+}
+
+.create-formcon .create-btns {
+	width: 100%;
+	padding: 8px 0px;
+	margin: 8px 0px 0px 0px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #f048b8;
+	color: #ffffff;
+	border-radius: 4px;
+}
+
+.create-formcon .create-btns:hover {
+	background-color: #f048b8;
+}
+
+.create-formcon hr {
+	background: none;
+	border: none;
+	padding: 0px;
+	margin: 4px 0px 7px 0px;
+	border-bottom: 1px dashed #bfdcd9;
+}
+
+.create-formcon .form-item {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.create-formcon .col-lg-6:first-child {}
+
+.create-formcon .col-lg-6:last-child {}
+.create-formcon .col-lg-12 p {
+	position: relative;
+	padding: 0 0px 0px 24px;
+	margin: 8px 0px 14px 0px;
+	font-size: 14px;
+}
+
+.create-formcon .col-lg-12 p a {
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.create-formcon .col-lg-12 p a:hover {
+	color: #ec5e77;
+}
+
+.create-formcon .col-lg-12 p input {
+	position: absolute;
+	left: 0px;
+	top: -7px;
+}
+.login-otp-height {
+	display: table;
+	min-height: 100vh;
+	vertical-align: middle;
+	padding-bottom: 280px;
+}
+
+.login-otp-height .loginotp-holder {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.login-otp-height .loginotp-holder h3 {
+	margin-top: 0px;
+}
+
+.login-otp-height .loginotp-holder p {
+	text-align: center;
+	font-size: 14px;
+}
+
+.login-form-item {
+	position: relative;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	width: 100%;
+	float: left;
+}
+
+.login-form-item i {
+	position: absolute;
+	left: 11px;
+	top: 15px;
+	font-size: 15px;
+	color: #bfdcd9;
+}
+
+.login-form-item input {
+	padding-left: 35px;
+	height: 45px;
+}
+@media only screen and (orientation:landscape) and (max-device-width: 820px) {
+	.loginotp-footer-wrapper-website {
+		position: relative;
+	}
+
+	.login-otp-height {
+		min-height: auto;
+		padding-bottom: 0px;
+		padding-top: 60px;
+	}
+}
